@@ -3,8 +3,25 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import List from "../components/list";
+import List from "../components/list"
 export default class IndexPage extends Component {
+  state = {
+    links: [
+      {
+        text: `GitHub - things I've made`,
+        href: "https://github.com/tawashley",
+      },
+      {
+        text: `LinkedIn - things I've done`,
+        href: "https://www.linkedin.com/in/tristanashley",
+      },
+      {
+        text: `Twitter - things I've said`,
+        href: "https://twitter.com/tawashley",
+      },
+    ],
+  }
+
   render() {
     return (
       <Layout>
@@ -16,7 +33,7 @@ export default class IndexPage extends Component {
           There isn't much to see here really, but I do have a few links that go
           to 'here, there and everywhere'.
         </p>
-        <List />
+        <List items={this.state.links} />
       </Layout>
     )
   }

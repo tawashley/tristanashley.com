@@ -1,21 +1,19 @@
 import React, { Component } from "react"
 
 export default class List extends Component {
-  render() {
+  renderItem(itemData, index) {
     return (
-      <ul>
-        <li>
-          <a href="https://github.com/tawashley">GitHub - things I've made</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/tristanashley">
-            LinkedIn - things I've done
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/tawashley">Twitter - things I've said</a>
-        </li>
-      </ul>
+      <li key={index}>
+        <a href="{ itemData.href }">{itemData.text}</a>
+      </li>
     )
+  }
+
+  renderItems() {
+    return this.props.items.map(this.renderItem)
+  }
+
+  render() {
+    return <ul>{this.renderItems()}</ul>
   }
 }
