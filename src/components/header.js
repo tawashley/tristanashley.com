@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+import SiteLogo from './site-logo'
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -13,9 +15,14 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `24px 0`,
+        display: 'flex',
+        alignItems: 'center'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <SiteLogo style={{
+          height: 60,
+      }} />
+      <h1 style={{ margin: 0, marginLeft: 16 }}>
         {siteTitle}
       </h1>
     </div>
