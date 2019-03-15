@@ -10,7 +10,7 @@ const IndexPage = () => (
         Hi there, I'm a front end developer that makes 'internet things'.
     </h2>
     <p>
-        There isn't much to see here really, but I do have a few links that go to here, there and everywhere
+        There isn't much to see here really, but I do have a few links that go to 'here, there and everywhere'.
     </p>
     <ul>
         <li>
