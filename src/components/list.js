@@ -4,7 +4,7 @@ export default class List extends Component {
   renderItem(itemData, index) {
     return (
       <li key={index}>
-        <a href="{ itemData.href }">{itemData.text}</a>
+        <a href={ itemData.href }>{itemData.text}</a>
       </li>
     )
   }
