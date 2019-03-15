@@ -15,16 +15,24 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `24px 0`,
-        display: 'flex',
-        alignItems: 'center'
+        display: 'flex'
       }}
     >
       <SiteLogo style={{
           height: 60,
       }} />
-      <h1 style={{ margin: 0, marginLeft: 16 }}>
-        {siteTitle}
-      </h1>
+      <section style={{
+        flex: 1,
+        display: 'flex',
+        borderLeft: '2px solid #074068',
+        alignItems: 'center',
+        marginLeft: 16
+      }}>
+        <h1 style={{ margin: 0, marginLeft: 16 }}>
+            {siteTitle}
+        </h1>
+      </section>
+      
     </div>
   </header>
 )
