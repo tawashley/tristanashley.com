@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `24px 0`,
+        padding: `24px 8px`,
         display: 'flex'
       }}
     >
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         alignItems: 'center',
         marginLeft: 16
       }}>
-        <h1 style={{ margin: 0, marginLeft: 16 }}>
+        <h1 style={{ margin: 0, marginLeft: 16, fontSize: '1.75rem' }}>
             {siteTitle}
         </h1>
       </section>
